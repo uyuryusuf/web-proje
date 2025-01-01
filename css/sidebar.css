@@ -45,6 +45,86 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Sidebar için temel stil */
+.left-sidebar {
+    width: 250px;
+    background-color: #003366;
+    color: #4A4A4A;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Başlangıçta menü gizli */
+    height: 100%;
+    padding: 20px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.3s ease-in-out; /* Kayma animasyonu */
+}
+
+/* Menü öğeleri */
+.left-sidebar-item {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.left-sidebar-item li {
+    margin: 10px 0;
+}
+
+.left-sidebar-item li a {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    background-color: #FFD700;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+.left-sidebar-item li a:hover {
+    background-color: #ff5200;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hamburger butonu stilini ayarlama */
+.hamburger {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Mobil ekranlar için */
+@media (max-width: 768px) {
+    .left-sidebar {
+        left: -250px; /* Başlangıçta menü gizli */
+    }
+
+    .hamburger {
+        display: block; /* Hamburger butonunu göster */
+    }
+}
+
+
+
 @keyframes yuklemeAnimasyonu {
     from {
         opacity: 0;
