@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #fafafa, #1299dd);
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left-sidebar {
+  width: 250px;
+  background-color: #fafafa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 20px 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-sidebar-item {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.left-sidebar-item li {
+  margin: 10px 0;
+}
+
+.left-sidebar-item li a {
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  background-color: #ff7f00;
+  color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+.left-sidebar-item li a:hover {
+  background-color: #ff5200;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.content-wrapper {
+  margin-left: 250px;
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.content {
+  max-width: 800px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 20px;
+}
+
+.description a {
+  color: #ff7f00;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.description a:hover {
+  color: #ff5200;
+}
+
+.content-left {
+  padding-right: 20px;
+}
+
+.content-right {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}

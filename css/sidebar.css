@@ -1,0 +1,57 @@
+.left-sidebar {
+    width: 250px;
+   background-color:#003366;
+     color: #4A4A4A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 20px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.left-sidebar-item {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; 
+    animation: yuklemeAnimasyonu 1s ease-in-out; 
+}
+
+.left-sidebar-item li {
+    margin: 10px 0; 
+}
+
+.left-sidebar-item li a {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    background-color: #FFD700;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center; 
+    transition: all 0.3s ease; 
+    width: calc(100% - 40px); 
+    margin: 0 auto; 
+}
+
+.left-sidebar-item li a:hover {
+    background-color: #ff5200; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes yuklemeAnimasyonu {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
