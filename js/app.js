@@ -16,13 +16,3 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 });
 
 
-document.getElementById('hamburger').addEventListener('click', function() {
-  const sidebar = document.getElementById('leftSidebar');
-  
-
-  if (sidebar.style.left === '0px') {
-      sidebar.style.left = '-250px';
-  } else {
-      sidebar.style.left = '0px'; 
-  }
-});
